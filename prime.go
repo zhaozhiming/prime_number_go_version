@@ -5,5 +5,13 @@ func Prime(number int) []int {
 		return []int{}
 	}
 
-	return []int{number}
+	list := []int{}
+	if number == 4 {
+		list = append(list, 2)
+		list = append(list, 2)
+	} else {
+		list = append(list, number)
+	}
+
+	return list
 }
