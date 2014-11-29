@@ -6,9 +6,10 @@ func Prime(number int) []int {
 	}
 
 	list := []int{}
-	if number == 4 {
-		list = append(list, 2)
-		list = append(list, 2)
+	divisor := 2
+	if number%divisor == 0 && number > 2 {
+		list = append(list, divisor)
+		list = append(list, number/divisor)
 	} else {
 		list = append(list, number)
 	}
