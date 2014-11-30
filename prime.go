@@ -6,20 +6,18 @@ func Prime(number int) []int {
 	}
 
 	list := []int{}
-
 	for divisor := 2; number >= divisor; {
 		if isPrime(number) {
 			return append(list, number)
 		}
 
-		mod := number % divisor
-		div := number / divisor
-		if mod == 0 {
-			list = append(list, divisor)
-			number = div
-		} else {
+		if number%divisor != 0 {
 			divisor++
+			continue
 		}
+
+		list = append(list, divisor)
+		number = number / divisor
 	}
 	return list
 }
