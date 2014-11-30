@@ -40,3 +40,19 @@ func Test_Given_7_then_return_7(t *testing.T) {
 func Test_Given_9_then_return_3_3(t *testing.T) {
 	assert.Equal(t, []int{3, 3}, Prime(9))
 }
+
+func Test_Given_10_then_return_2_5(t *testing.T) {
+	assert.Equal(t, []int{2, 5}, Prime(10))
+}
+
+func Test_Given_12_then_return_2_2_3(t *testing.T) {
+	assert.Equal(t, []int{2, 2, 3}, Prime(12))
+}
+
+func Test_Given_15_then_return_3_5(t *testing.T) {
+	assert.Equal(t, []int{3, 5}, Prime(15))
+}
+
+func Test_Given_78654_then_return_3_5(t *testing.T) {
+	assert.Equal(t, []int{2, 2, 2, 2, 2, 2, 1229}, Prime(78656))
+}
