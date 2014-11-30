@@ -36,3 +36,7 @@ func Test_Given_5_then_return_5(t *testing.T) {
 func Test_Given_7_then_return_7(t *testing.T) {
 	assert.Equal(t, []int{7}, Prime(7))
 }
+
+func Test_Given_9_then_return_3_3(t *testing.T) {
+	assert.Equal(t, []int{3, 3}, Prime(9))
+}
