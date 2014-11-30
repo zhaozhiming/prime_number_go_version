@@ -24,3 +24,7 @@ func Test_Given_4_then_return_2_2(t *testing.T) {
 func Test_Given_6_then_return_2_3(t *testing.T) {
 	assert.Equal(t, []int{2, 3}, Prime(6))
 }
+
+func Test_Given_8_then_return_2_2_2(t *testing.T) {
+	assert.Equal(t, []int{2, 2, 2}, Prime(8))
+}

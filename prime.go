@@ -7,11 +7,17 @@ func Prime(number int) []int {
 
 	list := []int{}
 	divisor := 2
-	if number%divisor == 0 && number > 2 {
-		list = append(list, divisor)
-		list = append(list, number/divisor)
-	} else {
-		list = append(list, number)
+
+	for number >= divisor {
+		mod := number % divisor
+		div := number / divisor
+		if mod == 0 && number > 2 {
+			list = append(list, divisor)
+		} else {
+			list = append(list, number)
+			divisor++
+		}
+		number = div
 	}
 
 	return list
