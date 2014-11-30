@@ -13,12 +13,12 @@ func Prime(number int) []int {
 		div := number / divisor
 		if mod == 0 && number > 2 {
 			list = append(list, divisor)
+			number = div
 		} else {
 			list = append(list, number)
+			number = divisor
 			divisor++
 		}
-		number = div
 	}
-
 	return list
 }
