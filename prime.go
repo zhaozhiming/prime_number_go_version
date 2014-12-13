@@ -4,5 +4,5 @@ func Prime(num int) []int {
 	if num < 2 {
 		return []int{}
 	}
-	return []int{2}
+	return []int{num}
 }

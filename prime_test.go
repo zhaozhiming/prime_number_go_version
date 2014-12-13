@@ -12,3 +12,7 @@ func Test_given_1_then_return_empty_list(t *testing.T) {
 func Test_given_2_then_return_2(t *testing.T) {
 	assert.Equal(t, []int{2}, Prime(2))
 }
+
+func Test_given_3_then_return_3(t *testing.T) {
+	assert.Equal(t, []int{3}, Prime(3))
+}
