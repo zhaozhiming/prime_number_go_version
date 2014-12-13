@@ -1,5 +1,5 @@
 package prime
 
-func Prime(int num) []int {
-	return nil
+func Prime(num int) []int {
+	return []int{}
 }
