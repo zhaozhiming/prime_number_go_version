@@ -9,7 +9,15 @@ func Prime(num int) []int {
 		return []int{num}
 	}
 
-	return []int{2, 2}
+	result := []int{}
+	div := 2
+	mod := num % div
+	if mod == 0 {
+		result = append(result, div)
+		result = append(result, num/div)
+	}
+
+	return result
 }
 
 func isPrime(num int) bool {
