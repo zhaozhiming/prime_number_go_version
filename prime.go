@@ -5,9 +5,18 @@ func Prime(num int) []int {
 		return []int{}
 	}
 
-	if num == 4 {
-		return []int{2, 2}
+	if isPrime(num) {
+		return []int{num}
 	}
 
-	return []int{num}
+	return []int{2, 2}
+}
+
+func isPrime(num int) bool {
+	for i := 2; i < num; i++ {
+		if num%i == 0 {
+			return false
+		}
+	}
+	return true
 }
