@@ -7,8 +7,7 @@ func Prime(num int) []int {
 
 	result := []int{}
 	for div := 2; div <= num; {
-		mod := num % div
-		if mod == 0 {
+		if num%div == 0 {
 			result = append(result, div)
 			num /= div
 		} else {
